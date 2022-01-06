@@ -1,0 +1,9 @@
+[Unit]
+Description=addnetwork
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/opt/mistnet/etc/addnetwork/
+ExecStart=/usr/bin/python addnetwork.py addnetwork.json
+[Install]
+WantedBy=multi-user.target
